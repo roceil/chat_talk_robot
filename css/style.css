@@ -1,14 +1,100 @@
-h1{
-    color:brown;
-}
-.people_pic{
-    position: absolute;
-}
 .border{
-    border: 2px solid red;
-    width: 120px;
-    height: 30px;
+    border: 1px solid black;
+}
+body{
+    width: 1366px;
+    margin: 0 auto;
     position: relative;
-    top: 155px;
-    left:90px;
+}
+li{
+    list-style: none;
+}
+/* 顏色定義區 */
+.color_orange{
+    background-color:#FF5D50 ;
+}
+.txt_blue{
+    color: #56C4C5;
+}
+/* 文字大小定義 */
+.fs-18{
+    font-size: 18px;
+}
+.fs-42{
+    font-size: 42px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-16{
+    font-size: 16px;
+}
+/* 圖片大小定義區 */
+.pic_size-90{
+    width: 90px;
+}
+/* margin定義區 */
+.mb-217{
+    margin-bottom: 217px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.ml-n32{
+    margin-left: -20px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mr-16{
+    margin-right: 16px;
+}
+
+
+.backgroung img{
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 850px;
+}
+.z-index2{
+    z-index:2;
+}
+
+.btn_style{
+    border-radius: 22px;
+    padding: 8px 32px;
+}
+.navbar a img{
+    width: 218.06px;
+}
+.navbar_btn{
+    font-size: 16px;
+    color:#FFFFFF ;
+    
+}
+.h534{
+    height: 534px;
+}
+.platform{
+    width: 969px;
+    margin: 0 auto;
+}
+.platform_li{
+    width: 244px;
+}
+.card_border_radius{
+    border-radius: 12px 12px 0px 0px;
 }
