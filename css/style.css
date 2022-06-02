@@ -1,27 +1,56 @@
-.border{
-    border: 1px solid black;
+/* 全域設定 */
+img{
+    width: 100%;
+    height: auto;
 }
-body{
-    width: 1366px;
-    margin: 0 auto;
-    position: relative;
+a{
+    text-decoration: none;
 }
 li{
     list-style: none;
 }
-/* 顏色定義區 */
-.color_orange{
-    background-color:#FF5D50 ;
+main{
+    padding: 0 28.7%;
+    margin-bottom: 100px;
 }
-.txt_blue{
-    color: #56C4C5;
+main .platform{
+    padding: 0 5.3%;
 }
-/* 文字大小定義 */
+
+.outline{
+    outline: 1px solid black;
+}
+/* 按鈕顏色 */
+.btn-color-orange{
+    background-color: #FF5D50;
+    border-radius: 22px;
+    width: 128px; 
+    height: 40px;
+    color: white;
+}
+.btn-color-orange:hover{
+    color: white;
+}
+.btn-color-blue{
+    background-color: #56C4C5;
+    border-radius: 22px;
+    width: 136px; 
+    height: 49px;
+    color: white;
+    padding:12px 32px ;
+}
+.btn-color-blue:hover{
+    color: white;
+}
+/* 字體大小 */
+.fs-16{
+    font-size: 16px;
+}
 .fs-18{
     font-size: 18px;
 }
-.fs-42{
-    font-size: 42px;
+.fs-48{
+    font-size: 48px;
 }
 .fs-20{
     font-size: 20px;
@@ -29,72 +58,114 @@ li{
 .fs-32{
     font-size: 32px;
 }
-.fs-24{
-    font-size: 24px;
+
+/* 字體顏色 */
+.txt-color-blue{
+    color:#56C4C5 ;
 }
-.fs-16{
-    font-size: 16px;
+
+
+.btn-topball{
+    background: #56C4C5;
+    color: white;
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 48px;
+    bottom: 23px;
+    cursor: pointer;
 }
-/* 圖片大小定義區 */
-.pic_size-90{
-    width: 90px;
-}
-/* margin定義區 */
-.mb-217{
-    margin-bottom: 217px;
-}
-.mb-48{
-    margin-bottom: 48px;
-}
-.ml-n32{
-    margin-left: -20px;
-}
-.mb-24{
+
+ 
+/* margin */
+.mgb-24{
     margin-bottom: 24px;
 }
-.mb-100{
+.mgb-48{
+    margin-bottom: 48px;
+}
+.mgt-65{
+    margin-top: 65px;
+}
+.mgb-100{
     margin-bottom: 100px;
 }
-.mb-16{
-    margin-bottom: 16px;
-}
-.mr-16{
-    margin-right: 16px;
-}
 
-
-.backgroung img{
-    position:absolute;
-    top:0;
-    right: 0;
-    width: 850px;
+/* Landing page */
+.wrap{
+    height: 57.675vh;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    position: relative;
+    padding:0 21%;
+    margin-bottom: 100px;
 }
-.z-index2{
-    z-index:2;
+.ball-1{
+    position: absolute;
+    bottom:-180.5px;
+    left:-210.5px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+    background-repeat: no-repeat;
+    height: 361px;
+    width: 361px;
 }
-
-.btn_style{
-    border-radius: 22px;
-    padding: 8px 32px;
+.header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* width:1085px ; */
+    padding: 24px 0;
 }
-.navbar a img{
-    width: 218.06px;
+.chattalker-logo{
+    width: 215.06px;
 }
-.navbar_btn{
-    font-size: 16px;
-    color:#FFFFFF ;
-    
-}
-.h534{
-    height: 534px;
-}
-.platform{
-    width: 969px;
+.home-container{
+    /* width: 1085px; */
     margin: 0 auto;
 }
-.platform_li{
-    width: 244px;
+.main-picture{
+    width: 532px; ;
 }
-.card_border_radius{
+.platform-community li{
+    width: 25.180%;
+}
+.platform-community li img{
+    width: 36.88524%;
+}
+.charactor-li{
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px #00000014;
+}
+.charactor-li li{
+    width: 23.963%;
+}
+.charactor-li img{
     border-radius: 12px 12px 0px 0px;
 }
+
+
+/* footer */
+.footer-pic{
+    background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 503px;
+}
+.footer-pic{
+    padding: 490px  0 197px 0 ;
+}
+.copyright p{
+    background-color:#F5F5F5 ;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: -16px;
+}
+
+
+
