@@ -395,7 +395,7 @@ header{
 
     }
     .navbar img{
-        height: 24px;
+        width: 130px;
     }
     .banner{
         max-width: 375px;
