@@ -1,4 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset end */
+
 /* 全域設定 */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
 img{
     width: 100%;
     height: auto;
@@ -10,35 +64,38 @@ li{
     list-style: none;
 }
 main{
-    padding: 0 28.7%;
-    margin-bottom: 100px;
+    position: relative;
 }
-main .platform{
-    padding: 0 5.3%;
-}
+
 
 .outline{
     outline: 1px solid black;
 }
 /* 按鈕顏色 */
 .btn-color-orange{
-    background-color: #FF5D50;
-    border-radius: 22px;
-    width: 128px; 
+    width: 128px;
     height: 40px;
     color: white;
+    background-color:#FF5D50 ;
+    cursor: pointer;
+    border-radius: 22px;
+    padding: 8px 23px;
 }
 .btn-color-orange:hover{
     color: white;
 }
 .btn-color-blue{
-    background-color: #56C4C5;
-    border-radius: 68px;
-    width: 136px; 
+    width: 136px;
     height: 49px;
+    font-style: 18px;
+    padding: 12px 32px;
+    background-color: #56C4C5;
     color: white;
-    padding:12px 0 ;
-    text-align: center;
+    border-radius: 27px;
+    border: 1px solid #56C4C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn-color-blue:hover{
     color: white;
@@ -50,123 +107,272 @@ main .platform{
 .fs-18{
     font-size: 18px;
 }
-.fs-48{
-    font-size: 48px;
-}
 .fs-20{
     font-size: 20px;
 }
+.fs-24{
+    font-size: 24px;
+}
 .fs-32{
     font-size: 32px;
+    line-height: 46px;
 }
-
-/* 字體顏色 */
-.txt-color-blue{
-    color:#56C4C5 ;
+.fs-48{
+    font-size: 48px;
+    line-height: 70px;
 }
-
-
-.btn-topball{
+/* 行高 */
+.lh-24{
+    line-height: 24px;
+}
+.lh-26{
+    line-height: 26px;
+}
+.lh-46{
+    line-height: 46px;
+}
+/* 顏色 */
+.blue{
+    color: #56C4C5;
+}
+.gray{
+    color:#747474 ;
+}
+.topball{
     background: #56C4C5;
-    color: white;
+    border-radius: 100%;
     width: 71px;
     height: 71px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
     position: fixed;
     right: 48px;
     bottom: 23px;
     cursor: pointer;
+    z-index: 2;
 }
-
- 
-/* margin */
-.mgb-24{
-    margin-bottom: 24px;
-}
-.mgb-48{
-    margin-bottom: 48px;
-}
-.mgt-65{
-    margin-top: 65px;
-}
-.mgb-100{
-    margin-bottom: 100px;
-}
-
-/* Landing page */
-.wrap{
-    height: 57.675vh;
+/* header baground */
+header{
+    height: 100vh;
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
-    background-position: right top;
     background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 850px;
     position: relative;
-    padding:0 21%;
     margin-bottom: 100px;
 }
 .ball-1{
-    position: absolute;
-    bottom:-180.5px;
-    left:-210.5px;
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
     background-repeat: no-repeat;
-    height: 361px;
+    background-position:center;
     width: 361px;
+    height: 360px;
+    position: absolute;
+    bottom: -180px;
+    left:-225.5px;
 }
-.header{
-    display: flex;
+.ball-2{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg);
+    background-repeat: no-repeat;
+    background-position:left;
+    width: 160px;
+    height: 360px;
+    position: absolute;
+    bottom:48%;
+    right: 0;
+    z-index: -1;
+}
+.ball-3{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+    background-repeat: no-repeat;
+    background-position:left;
+    width: 160px;
+    height: 360px;
+    position: absolute;
+    bottom:128px;
+    left:0;
+    z-index: -1;
+}
+.navbar{
+    max-width: 1085px;
     margin: 0 auto;
-    justify-content: space-between;
-    /* width:1085px ; */
     padding: 24px 0;
 }
-.chattalker-logo{
-    width: 215.06px;
+.navbar img{
+    height: 40px;
 }
-.home-container{
-    /* width: 1085px; */
+.banner{
+    max-width: 1085px;
     margin: 0 auto;
 }
-.main-picture{
-    width: 532px; ;
+.banner-pic{
+    width: 49.0322%;
 }
-.platform-community li{
-    width: 25.180%;
+.platform{
+    max-width: 969px;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
-.platform-community li img{
-    width: 36.88524%;
+.platform-li{
+    width: 25.18%;
 }
-.charactor-li{
-    border-radius: 12px;
+.platform-li img{
+    width: 90px;
+    height: 90px;
+}
+.charactor{
+    max-width: 1088px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.charactor-card img{
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: -2px;
+
+
+}
+.charactor-card-txt{
+    padding: 16px 16px 24px 16px;
     box-shadow: 0px 2px 10px #00000014;
 }
-.charactor-li li{
-    width: 23.963%;
+.product{
+    max-width: 1088px;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
-.charactor-li img{
-    border-radius: 12px 12px 0px 0px;
+.icon1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon01.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 100%;
+    width: 86px;
+    height: 86px;
 }
+.icon2{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon02.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 100%;
+    width: 86px;
+    height: 86px;
+}
+.icon3{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon03.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 100%;
+    width: 86px;
+    height: 86px;
+}
+.icon4{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon04.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 100%;
+    width: 86px;
+    height: 86px;
+}
+.product-card-content{
+    max-width: 506px;
+}
+.product-card{
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 32px 32px 48px 32px;
+    height: 280px;
+    max-width: 230px;
+}
+.product-txt{
+    margin-left: 107px;
+}
+.comment{
+    max-width: 1088px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.comment h3{
+    margin-bottom: 104px;
+}
+.comment-card{
+    width: 33%;
+    padding: 48px 32px 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px #00000014;
+    position: relative;
+    
+    
 
+}
+.comment-person1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user01.jpg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -48px;
+    left: 32px;
+}
+.comment-person2{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user02.jpg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -48px;
+    left: 32px;
+}
+.comment-person3{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user03.jpg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -48px;
+    left: 32px;
+}
+.comment-level{
+    max-width: 284px;
+}
+.comment-level img{
+    max-width: 11.78%;
+    margin-right: 8px;
+}
+.pagination li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: #747474;
+    margin-right: 8px;
+}
+.pagination .this-page{
+    width: 16px;
+    height: 10px;
+    border-radius: 50px;
+    background:#FFD153;
 
-/* footer */
+}
 .footer-pic{
-    background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 503px;
+    position: relative;
+    padding-top: 260px;
 }
-.footer-pic{
-    padding: 490px  0 197px 0 ;
-}
-.copyright p{
+.footer-copyright p{
     background-color:#F5F5F5 ;
-    padding: 16px;
-    text-align: center;
-    margin-bottom: -16px;
+    padding: 16px 0 ;
 }
-
-
-
