@@ -568,5 +568,8 @@ header{
     .ball-2{
         display: none;
     }
-
+    .topball{
+        right: 5px;
+        bottom: 10px;
+    }
 }
