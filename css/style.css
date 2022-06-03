@@ -497,9 +497,11 @@ header{
     margin-bottom: 32px;
     }
     .comment{
-        max-width: 1088px;
+        max-width: 375px;
         margin: 0 auto;
         margin-bottom: 100px;
+
+
     }
     .comment-sm{
         flex-wrap: wrap;
