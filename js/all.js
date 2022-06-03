@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(`.topball`).click(function (e) {
-        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+        $('html,body').animate({ scrollTop: 0 }, 'normal');   /* 返回到最頂上 */
         return false;
     });
     $(`.home-btn`).click(function (e) { 
