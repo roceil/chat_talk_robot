@@ -389,7 +389,7 @@ header{
         margin-bottom: 100px;
     }
     .navbar{
-        max-width: 375px;
+        max-width: 11em;
         margin: 0 auto;
         padding: 30px 0;
         margin-bottom: 32px;
