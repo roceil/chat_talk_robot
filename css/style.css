@@ -389,7 +389,7 @@ header{
         margin-bottom: 100px;
     }
     .navbar{
-        max-width: 11em;
+        max-width: 375px;
         margin: 0 auto;
         padding: 30px 0;
         margin-bottom: 32px;
@@ -397,7 +397,7 @@ header{
 
     }
     .navbar img{
-        width: 130px;
+        width: 11rem;
     }
     .banner{
         max-width: 375px;
