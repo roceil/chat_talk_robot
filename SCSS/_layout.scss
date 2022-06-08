@@ -1,0 +1,67 @@
+a{
+    text-decoration: none;
+}
+
+
+// header
+.navbar{
+    max-width: 1088px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin-bottom: 30px;
+    img{
+        width: 218px;
+    }
+}
+
+.nav-btn-orange{
+    padding:8px 31px;
+    background-color: $btn-orange;
+    color: white;
+    width: 128px;
+    height: 40px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        color: $btn-orange;
+        border: 1px solid $btn-orange;
+        background-color: white;
+    }
+}
+.product-btn-blue{
+    padding:12px 32px;
+    background-color: $btn-blue;
+    color: white;
+    width: 136px;
+    height: 46px;
+    border-radius: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        color: $btn-blue;
+        border: 1px solid $btn-blue;
+        background-color: white;
+    }
+}
+.footer-btn-blue{
+    padding:12px 32px;
+    background-color: $btn-blue;
+    color: white;
+    width: 136px;
+    height: 49px;
+    border-radius: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        color: $btn-blue;
+        border: 1px solid $btn-blue;
+        background-color: white;
+    }
+}
+

@@ -1,0 +1,316 @@
+
+// header區塊
+header{
+    height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: relative;
+}
+.ball01{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 138px;
+    height: 360px;
+    position: absolute;
+    bottom: -180px;
+    
+}
+.banner{
+    max-width:1085px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 217px;
+    .banner-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-txt-blue{
+        color:$btn-blue;
+        line-height:$lh-26;
+        margin-bottom: 8px;
+    }
+    h2{
+        font-size: $fs-48;
+        line-height: $lh-70;
+        font-weight: bolder;
+        margin-bottom:16px ;
+    }
+    img{
+        width: 49.0322%;
+    }
+}
+
+// main區塊
+main{
+    position: relative;
+}
+.ball02{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg);
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 320px;
+    position: absolute;
+    bottom: 1012px;
+    right: 0px;
+    z-index: -1;
+}
+.ball03{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 153px;
+    position: absolute;
+    bottom: 220px;
+    left: 0px;
+    z-index: -1;
+}
+.platform{
+    max-width: 969px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: $fs-32;
+    line-height: $lh-46;
+    font-weight: bolder;
+    margin-bottom: 100px;
+    h3{
+        margin-bottom: 48px;
+    }
+    .platform-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        max-width: 244px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 90px;
+            margin-bottom: 24px;
+        }
+        h4{
+            font-size: 23px;
+            line-height: $lh-35;
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: $fs-16;
+            line-height: $lh-24;
+            color: $txt-gray;
+        }
+    }
+}
+.charactor{
+    max-width: 1088px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    h3{
+        font-size:$fs-32 ;
+        line-height: $lh-46;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    p{
+        font-size:$fs-20;
+        line-height: $lh-29;
+        margin-bottom: 48px;
+    }
+}
+.charactor-item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+        img{
+            border-radius: 12px 12px 0px 0px;
+            width: 260px;
+        }
+        .charactor-item-txt{
+            height: 168px;
+            margin-top: -1px;
+            padding:16px 16px 24px 16px;
+            box-shadow: 0px 2px 10px #00000014;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            h4{
+                color: $btn-blue;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: $fs-16;
+                line-height: $lh-24;
+            }
+        }
+    }
+
+
+}
+.brand{
+    max-width: 1039px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:start;
+    margin-bottom: 100px;
+    .brand-item{
+        display: flex;
+        flex-wrap: wrap;
+        max-width:507px;
+        margin-right: 137px;
+        li{
+            width: 45.2%;
+            padding: 32px 32px 48px 32px ;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            .brand-item-pic{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 86px;
+                padding: 15px 19px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 2px 10px #00000014;
+                border-radius: 100%;
+                margin-bottom: 41px;
+            }
+            h4{
+                font-size:$fs-18;
+                line-height: $lh-26;
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+            p{
+                line-height: $lh-24;
+            }
+        } 
+    }
+    .brand-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3{
+            font-size: $fs-32;
+            line-height: $lh-46;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: $fs-18;
+            line-height: $lh-26;
+            margin-bottom: 24px;
+        }
+    }
+
+}
+.review{
+    max-width: 1088px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    h3{
+        font-size: $fs-32;
+        line-height: $lh-46;
+        font-weight: bold;
+        margin-bottom: 104px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+    .review-item-person{
+        img{
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 100%;
+            width: 80px;
+            position: absolute;
+            top: -55px;
+            left: 32px;
+        }
+    }
+    li{
+        position: relative;
+        width: 32.4423%;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+        padding: 48px 32px 24px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        p{
+            text-align: start;
+            margin-bottom: 24px;
+            line-height: $lh-24;
+        }
+        hr{
+            margin-bottom: 24px;
+        }
+        h5{
+            text-align:start;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    }
+}
+.review-item-personName{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        margin-bottom: 0 !important;
+    }
+    .review-item-star{
+        display: flex;
+        img{
+            width: 15%;
+            margin-right: 8.22px;
+        }
+    }
+}
+.review-item-pagination{
+    display: flex;
+    justify-content: center !important;
+    li{
+        background: #DDDDDD 0% 0% no-repeat padding-box;
+        border-radius: 50px;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin-right: 8px;
+    }
+    .this{
+        background: #FFD153 0% 0% no-repeat padding-box;
+        width: 16px;
+        height: 10px;
+    }
+}
+
+// footer區塊
+.footer-banner{
+    max-width: 100%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 430px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-size: $fs-32;
+        line-height: $lh-46;
+        font-weight: bold;
+        margin-bottom: 48px;
+    }
+}
+.footer-copyright{
+    width: 100%;
+    background-color: #DDDDDD;
+    padding: 16px 0;
+    text-align: center;
+}

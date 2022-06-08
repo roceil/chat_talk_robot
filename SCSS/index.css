@@ -1,0 +1,586 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  max-width: 1088px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+  margin-bottom: 30px;
+}
+
+.navbar img {
+  width: 218px;
+}
+
+.nav-btn-orange {
+  padding: 8px 31px;
+  background-color: #FF5D50;
+  color: white;
+  width: 128px;
+  height: 40px;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-btn-orange:hover {
+  color: #FF5D50;
+  border: 1px solid #FF5D50;
+  background-color: white;
+}
+
+.product-btn-blue {
+  padding: 12px 32px;
+  background-color: #56C4C5;
+  color: white;
+  width: 136px;
+  height: 46px;
+  border-radius: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-btn-blue:hover {
+  color: #56C4C5;
+  border: 1px solid #56C4C5;
+  background-color: white;
+}
+
+.footer-btn-blue {
+  padding: 12px 32px;
+  background-color: #56C4C5;
+  color: white;
+  width: 136px;
+  height: 49px;
+  border-radius: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-btn-blue:hover {
+  color: #56C4C5;
+  border: 1px solid #56C4C5;
+  background-color: white;
+}
+
+header {
+  height: 100vh;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: relative;
+}
+
+.ball01 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 138px;
+  height: 360px;
+  position: absolute;
+  bottom: -180px;
+}
+
+.banner {
+  max-width: 1085px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 217px;
+}
+
+.banner .banner-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-txt-blue {
+  color: #56C4C5;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.banner h2 {
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: bolder;
+  margin-bottom: 16px;
+}
+
+.banner img {
+  width: 49.0322%;
+}
+
+main {
+  position: relative;
+}
+
+.ball02 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg);
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 320px;
+  position: absolute;
+  bottom: 1012px;
+  right: 0px;
+  z-index: -1;
+}
+
+.ball03 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+  background-repeat: no-repeat;
+  width: 153px;
+  height: 153px;
+  position: absolute;
+  bottom: 220px;
+  left: 0px;
+  z-index: -1;
+}
+
+.platform {
+  max-width: 969px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bolder;
+  margin-bottom: 100px;
+}
+
+.platform h3 {
+  margin-bottom: 48px;
+}
+
+.platform .platform-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.platform li {
+  max-width: 244px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.platform li img {
+  width: 90px;
+  margin-bottom: 24px;
+}
+
+.platform li h4 {
+  font-size: 23px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.platform li p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #747474;
+}
+
+.charactor {
+  max-width: 1088px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.charactor h3 {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.charactor p {
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 48px;
+}
+
+.charactor-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.charactor-item li img {
+  border-radius: 12px 12px 0px 0px;
+  width: 260px;
+}
+
+.charactor-item li .charactor-item-txt {
+  height: 168px;
+  margin-top: -1px;
+  padding: 16px 16px 24px 16px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+
+.charactor-item li .charactor-item-txt h4 {
+  color: #56C4C5;
+  margin-bottom: 16px;
+}
+
+.charactor-item li .charactor-item-txt p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.brand {
+  max-width: 1039px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 100px;
+}
+
+.brand .brand-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 507px;
+  margin-right: 137px;
+}
+
+.brand .brand-item li {
+  width: 45.2%;
+  padding: 32px 32px 48px 32px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+.brand .brand-item li .brand-item-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 86px;
+  padding: 15px 19px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 100%;
+  margin-bottom: 41px;
+}
+
+.brand .brand-item li h4 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.brand .brand-item li p {
+  line-height: 24px;
+}
+
+.brand .brand-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brand .brand-txt h3 {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.brand .brand-txt p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.review {
+  max-width: 1088px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.review h3 {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+  margin-bottom: 104px;
+}
+
+.review ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.review .review-item-person img {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 100%;
+  width: 80px;
+  position: absolute;
+  top: -55px;
+  left: 32px;
+}
+
+.review li {
+  position: relative;
+  width: 32.4423%;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  padding: 48px 32px 24px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.review li p {
+  text-align: start;
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+.review li hr {
+  margin-bottom: 24px;
+}
+
+.review li h5 {
+  text-align: start;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.review-item-personName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.review-item-personName p {
+  margin-bottom: 0 !important;
+}
+
+.review-item-personName .review-item-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.review-item-personName .review-item-star img {
+  width: 15%;
+  margin-right: 8.22px;
+}
+
+.review-item-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.review-item-pagination li {
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin-right: 8px;
+}
+
+.review-item-pagination .this {
+  background: #FFD153 0% 0% no-repeat padding-box;
+  width: 16px;
+  height: 10px;
+}
+
+.footer-banner {
+  max-width: 100%;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 430px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-banner h3 {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.footer-copyright {
+  width: 100%;
+  background-color: #DDDDDD;
+  padding: 16px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
