@@ -61,6 +61,28 @@ a {
   text-decoration: none;
 }
 
+.btn-top {
+  background: #56C4C5 0% 0% no-repeat padding-box;
+  border-radius: 100%;
+  width: 71px;
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  right: 48px;
+  bottom: 23px;
+  z-index: 5;
+}
+
 .navbar {
   max-width: 1088px;
   margin: 0 auto;

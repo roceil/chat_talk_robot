@@ -2,7 +2,22 @@ a{
     text-decoration: none;
 }
 
-
+//btn-top
+.btn-top{
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border-radius: 100%;
+    width: 71px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    right: 48px;
+    bottom: 23px;
+    z-index: 5;
+}
 // header
 .navbar{
     max-width: 1088px;
@@ -16,7 +31,6 @@ a{
         width: 218px;
     }
 }
-
 .nav-btn-orange{
     padding:8px 31px;
     background-color: $btn-orange;
