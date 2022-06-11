@@ -386,6 +386,7 @@ header .banner-txt p {
 }
 
 .basic-txt li.basic-txt-check {
+  width: 100%;
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -403,8 +404,7 @@ header .banner-txt p {
   margin-right: 12.94px;
 }
 
-.basic-txt li.basic-txt-check span {
-  width: 296px;
+.basic-txt li.basic-txt-check p {
   margin: 0;
 }
 
