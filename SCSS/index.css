@@ -72,6 +72,7 @@ a {
           justify-content: space-between;
   padding: 24px 0;
   margin-bottom: 30px;
+  z-index: 3;
 }
 
 .navbar img {
@@ -148,6 +149,13 @@ a {
   color: #56C4C5;
   border: 1px solid #56C4C5;
   background-color: white;
+}
+
+.footer-copyright {
+  width: 100%;
+  background-color: #DDDDDD;
+  padding: 16px 0;
+  text-align: center;
 }
 
 header {
@@ -575,12 +583,5 @@ main {
   line-height: 46px;
   font-weight: bold;
   margin-bottom: 48px;
-}
-
-.footer-copyright {
-  width: 100%;
-  background-color: #DDDDDD;
-  padding: 16px 0;
-  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
