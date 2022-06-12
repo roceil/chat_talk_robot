@@ -95,7 +95,7 @@ a {
           justify-content: space-between;
   padding: 24px 0;
   margin-bottom: 30px;
-  z-index: 3;
+  z-index: 3 !important;
 }
 
 .navbar img {
