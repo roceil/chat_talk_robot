@@ -233,6 +233,7 @@ header .banner-txt p {
     margin-bottom: 60px;
   }
   header .banner-txt {
+    padding-left: 20px;
     z-index: 3;
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
     background-repeat: no-repeat;
