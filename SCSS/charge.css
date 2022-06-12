@@ -142,6 +142,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .product-btn-blue:hover {
@@ -181,6 +182,18 @@ a {
   text-align: center;
 }
 
+@media (max-width: 390px) {
+  .navbar {
+    border-bottom: 1px solid #FFD153;
+    margin-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .navbar img {
+    width: 130.84px;
+  }
+}
+
 header {
   background-color: #F7F9FD;
   border-radius: 0px 0px 0px 300px;
@@ -212,6 +225,27 @@ header .banner-txt h2 {
 
 header .banner-txt p {
   line-height: 24px;
+}
+
+@media (max-width: 390px) {
+  header {
+    height: 495px;
+    margin-bottom: 60px;
+  }
+  header .banner-txt {
+    z-index: 100 !important;
+  }
+  header .banner-txt h2 {
+    z-index: 100 !important;
+    font-size: 46px;
+  }
+  header .banner-pic {
+    z-index: 2;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 495px;
+  }
 }
 
 .plan {
@@ -489,5 +523,123 @@ header .banner-txt p {
 .question-this .question-answer p {
   line-height: 32px;
   color: #747474;
+}
+
+.btn-experience {
+  margin-left: 30%;
+  margin-top: 32px;
+}
+
+@media (max-width: 390px) {
+  main {
+    padding: 0 20px;
+  }
+  .plan {
+    margin-bottom: 60px;
+  }
+  .plan h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+  .plan .use-people {
+    padding-left: 120px;
+    margin-bottom: 54px;
+  }
+  .plan .use-people .this {
+    font-size: 16px;
+    width: 90px;
+    height: 40px;
+    padding: 8px 13px;
+    margin-right: 6px;
+    background-color: #56C4C5;
+  }
+  .plan .use-people li {
+    font-size: 16px;
+    width: 90px;
+    height: 40px;
+    padding: 8px 16px;
+    margin-right: 6px;
+  }
+  .plan-version li {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .counting {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 32px;
+  }
+  .counting .user {
+    width: 139px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    padding-top: 24px;
+  }
+  .counting .user p {
+    margin-bottom: 8px;
+  }
+  .counting .user .user-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .counting .user .user-number span {
+    padding-left: 6px;
+    margin-right: 4px;
+  }
+  .counting .user .user-number sub {
+    padding-top: 11px;
+    color: #56C4C5;
+  }
+  .counting .equal {
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 24px;
+  }
+  .counting .cost {
+    width: 41%;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 24px;
+  }
+  .counting .cost p {
+    margin-bottom: 8px;
+  }
+  .counting .cost .cost-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .counting .cost .cost-number span {
+    margin-right: 4px;
+    padding-left: 10px;
+  }
+  .basic-txt li.basic-txt-check {
+    width: 100%;
+  }
+  .basic-txt li.basic-txt-check span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .question {
+    margin-bottom: 60px;
+  }
+  .question h3 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  .question-this {
+    display: inline-block !important;
+  }
+  .question-this .question-answer p {
+    line-height: 32px;
+    color: #747474;
+  }
 }
 /*# sourceMappingURL=charge.css.map */

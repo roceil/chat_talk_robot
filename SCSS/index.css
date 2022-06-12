@@ -142,6 +142,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .product-btn-blue:hover {
@@ -179,6 +180,18 @@ a {
   background-color: #DDDDDD;
   padding: 16px 0;
   text-align: center;
+}
+
+@media (max-width: 390px) {
+  .navbar {
+    border-bottom: 1px solid #FFD153;
+    margin-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .navbar img {
+    width: 130.84px;
+  }
 }
 
 header {
@@ -239,6 +252,68 @@ header {
 
 .banner img {
   width: 49.0322%;
+}
+
+@media (max-width: 390px) {
+  header {
+    height: 668px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .ball01 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+    background-size: 126px;
+    width: 63px;
+    height: 126px;
+    left: -22px;
+    bottom: -230px;
+  }
+  .banner {
+    padding: 0 20px;
+    max-width: 1085px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 217px;
+  }
+  .banner .banner-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner .banner-txt p {
+    line-height: 24px;
+  }
+  .banner .banner-txt-blue {
+    line-height: 24px;
+    font-weight: bold;
+  }
+  .banner h2 {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bolder;
+  }
+  .banner img {
+    width: 100%;
+  }
 }
 
 main {
@@ -579,6 +654,180 @@ main {
   height: 10px;
 }
 
+@media (max-width: 390px) {
+  main {
+    padding: 0 20px;
+  }
+  .platform {
+    margin-bottom: 60px;
+  }
+  .platform h3 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  .platform .platform-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .platform li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .platform li img {
+    width: 60px;
+    margin-bottom: 16px;
+  }
+  .platform li h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+  .platform li p {
+    margin-bottom: 24px;
+  }
+  .charactor {
+    margin-bottom: 28px;
+  }
+  .charactor h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .charactor p {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 48px;
+    margin-bottom: 32px;
+  }
+  .charactor-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .charactor-item li {
+    margin-bottom: 24px;
+  }
+  .brand {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 60px;
+  }
+  .brand .brand-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .brand .brand-item li {
+    width: 230px;
+    margin-right: 0 !important;
+    margin-bottom: 24px;
+  }
+  .brand .brand-txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brand .brand-txt h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .brand .brand-txt p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .brand .brand-txt a {
+    margin-bottom: 32px;
+  }
+  .review {
+    margin-bottom: 100px;
+  }
+  .review h3 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 88px;
+  }
+  .review .review-item li {
+    display: none;
+  }
+  .review .review-item .this-sm {
+    display: block;
+    margin-bottom: 24px;
+  }
+  .review .review-item li {
+    width: 100%;
+  }
+  .review .review-item-personName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .review .review-item-personName p {
+    margin-bottom: 0 !important;
+  }
+  .review .review-item-personName .review-item-star {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .review .review-item-personName .review-item-star img {
+    width: 15%;
+    margin-right: 8.22px;
+  }
+  .review .review-item-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .review .review-item-pagination li {
+    background: #DDDDDD 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-right: 8px;
+  }
+  .review .review-item-pagination .this {
+    background: #FFD153 0% 0% no-repeat padding-box;
+    width: 16px;
+    height: 10px;
+  }
+  .review-item-pagination {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-banner {
   max-width: 100%;
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
@@ -606,5 +855,17 @@ main {
   line-height: 46px;
   font-weight: bold;
   margin-bottom: 48px;
+}
+
+@media (max-width: 390px) {
+  .footer-banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
+    height: 460px;
+  }
+  .footer-banner h3 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -43,6 +43,53 @@ header{
         width: 49.0322%;
     }
 }
+@media (max-width:390px) {
+    header{
+        height: 668px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    .ball01{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+        background-size: 126px;
+        width: 63px;
+        height: 126px;
+        left: -22px;
+        bottom: -230px;
+    }
+    .banner{
+        padding: 0 20px;
+        max-width:1085px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 217px;
+        .banner-txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                line-height: $lh-24;
+            }
+        }
+        .banner-txt-blue{
+            line-height:$lh-24;
+            font-weight: bold;
+        }
+        h2{
+            font-size: $fs-32;
+            line-height: $lh-46;
+            font-weight: bolder;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
 
 // main區塊
 main{
@@ -288,7 +335,147 @@ main{
         height: 10px;
     }
 }
-
+@media (max-width:390px) {
+    main{
+        padding: 0 20px;
+    }
+    .platform{
+        margin-bottom: 60px;
+        h3{
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 32px;
+        }
+        .platform-item{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        li{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 60px;
+                margin-bottom: 16px;
+            }
+            h4{
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 16px;
+            }
+            p{
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .charactor{
+        margin-bottom: 28px;
+        h3{
+            font-size:28px ;
+            line-height: 40px;
+        }
+        p{
+            font-size:19px;
+            line-height: 26px;
+            margin-bottom: 48px;
+            margin-bottom: 32px;
+        }
+    }
+    .charactor-item{
+        justify-content: center;
+        li{
+            margin-bottom: 24px;
+        }
+    }
+    .brand{
+        flex-direction: column-reverse;
+        margin-bottom: 60px;
+        .brand-item{
+            justify-content: center;
+            width: 100%;
+            li{
+                width: 230px;
+                margin-right: 0 !important;
+                margin-bottom: 24px;
+            } 
+        }
+        .brand-txt{
+            align-items: center;
+            h3{
+                font-size: 28px;
+                line-height: 40px;
+            }
+            p{
+                text-align: center;
+                font-size: $fs-16;
+                line-height: 24px;
+                margin-bottom: 16px;
+            }
+            a{
+                margin-bottom: 32px;
+            }
+        }
+    
+    }
+    .review{
+        margin-bottom: 100px;
+        h3{
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 88px;
+        }
+        .review-item{
+            li{
+                display: none;
+            }
+            .this-sm{
+                display: block;
+                margin-bottom: 24px;
+            }
+        li{
+            width: 100%;
+        }
+    }
+    .review-item-personName{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            margin-bottom: 0 !important;
+        }
+        .review-item-star{
+            display: flex;
+            img{
+                width: 15%;
+                margin-right: 8.22px;
+            }
+        }
+    }
+    .review-item-pagination{
+        display: flex;
+        justify-content: center !important;
+        li{
+            background: #DDDDDD 0% 0% no-repeat padding-box;
+            border-radius: 50px;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            margin-right: 8px;
+        }
+        .this{
+            background: #FFD153 0% 0% no-repeat padding-box;
+            width: 16px;
+            height: 10px;
+        }
+    }
+    }
+    .review-item-pagination{
+        margin-bottom: 60px;
+    }
+}
 // footer區塊
 .footer-banner{
     max-width: 100%;
@@ -306,5 +493,16 @@ main{
         line-height: $lh-46;
         font-weight: bold;
         margin-bottom: 48px;
+    }
+}
+@media (max-width:390px) {
+    .footer-banner{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
+        height: 460px;
+        h3{
+            font-size: 24px;
+            line-height: 35px;
+            margin-bottom: 24px;
+        }
     }
 }
