@@ -29,6 +29,7 @@ header{
 }
 @media (max-width:390px) {
     header{
+        z-index: -1;
         height: 495px;
         margin-bottom: 60px;
         .banner-txt{
@@ -39,7 +40,7 @@ header{
             }
         }
         .banner-pic{
-            z-index: 2;
+            z-index: -1;
             background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
             background-repeat: no-repeat;
             width: 100%;
