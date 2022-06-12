@@ -95,7 +95,7 @@ a {
           justify-content: space-between;
   padding: 24px 0;
   margin-bottom: 30px;
-  z-index: 3;
+  z-index: 3 !important;
 }
 
 .navbar img {
@@ -234,17 +234,19 @@ header .banner-txt p {
   }
   header .banner-txt {
     z-index: 3;
-  }
-  header .banner-txt h2 {
-    z-index: 100 !important;
-    font-size: 46px;
-  }
-  header .banner-pic {
-    z-index: 1;
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
     background-repeat: no-repeat;
     width: 100%;
     height: 495px;
+    margin-top: -32px;
+  }
+  header .banner-txt h2 {
+    padding-top: 32px;
+    font-size: 46px;
+  }
+  header .banner-pic {
+    z-index: 1;
+    background-image: none;
   }
 }
 
